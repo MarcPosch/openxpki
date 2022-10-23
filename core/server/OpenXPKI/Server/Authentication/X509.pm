@@ -144,7 +144,7 @@ sub _validation_result {
     }
 
     # fetch userinfo from handler
-    my $role = $self->default_role();
+    my $role = $self->role();
     my $tenants;
     my $userinfo;
     if (CTX('config')->exists([ @prefix, 'user' ])) {
